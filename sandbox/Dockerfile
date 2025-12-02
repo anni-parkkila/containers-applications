@@ -6,7 +6,7 @@ COPY --chown=node:node . .
 
 RUN npm ci
 
-ENV DEBUG=playground:*
+ENV DEBUG=sandbox:*
 
 USER node
 
