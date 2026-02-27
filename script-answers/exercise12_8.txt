@@ -1,0 +1,91 @@
+Script started on Fri Feb 27 11:45:54 2026
+[1m[7m%[27m[1m[0m                                                                                                                                                                                           ]2;anni@Annis-MacBook-Pro:~/dev/Full Stack Open kurssi/containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://Annis-MacBook-Pro.local/Users/anni/dev/Full%20Stack%20Open%20kurssi/containers-applications/todo-app/todo-backend\[0m[27m[24m[J[39m[0m[49m
+[44m[37m [01;37mpe 27 helmikuuta - 11:46[22;37m [46m[34m[37m [01;37m~/dev/Full Stack Open kurssi/containers-applications/todo-app/todo-backend[22;37m [43m[36m[35m [01;35m exercises-12_5-12 1☀[22;35m [49m[33m[39m
+[43m[35m [01;35m@anni[22;35m [49m[33m[39m [K[?1h=[?2004hscript[32ms[32mc[32mr[32mi[32mp[32mt[39m[32me[32mx[32mi[32mt[39m[39m [39m [32md[32mo[32mc[32mk[39mer exec -it todo-backend-mongo-1 bash[38D[32mk[32me[32mr[39m[35C[34Dcontainer start todo-backend-mongo-1[?1l>[?2004l
+]2;docker container start todo-backend-mongo-1]1;dockertodo-backend-mongo-1
+[1m[7m%[27m[1m[0m                                                                                                                                                                                           ]2;anni@Annis-MacBook-Pro:~/dev/Full Stack Open kurssi/containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://Annis-MacBook-Pro.local/Users/anni/dev/Full%20Stack%20Open%20kurssi/containers-applications/todo-app/todo-backend\[0m[27m[24m[J[39m[0m[49m
+[44m[37m [01;37mpe 27 helmikuuta - 11:46[22;37m [46m[34m[37m [01;37m~/dev/Full Stack Open kurssi/containers-applications/todo-app/todo-backend[22;37m [43m[36m[35m [01;35m exercises-12_5-12 1☀[22;35m [49m[33m[39m
+[43m[35m [01;35m@anni[22;35m [49m[33m[39m [K[?1h=[?2004hdocker container start todo-backend-mongo-1[43D[32md[32mo[32mc[32mk[32me[32mr[39m[37C[43D[32ms[32mc[32mr[32mi[32mp[32mt[39m                                     [37D[32me[32mx[32mi[32mt[39m[39m [39m [32md[32mo[32mc[32mk[39mer exec -it todo-backend-mongo-1 bash[38D[32mk[32me[32mr[39m[35C[?1l>[?2004l
+]2;docker exec -it todo-backend-mongo-1 bash]1;docker[?2004hroot@fcd6c63ee8d1:/# exitmongosh -u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	69a167f25b1ca2b80a74e399
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.6[0m
+Using MongoDB:		8.0.13
+[1m[33mUsing Mongosh[0m:		2.5.6
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[?2004h[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2026-02-27T09:46:19.994+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2026-02-27T09:46:19.994+00:00: We suggest setting the contents of sysfsFile to 0.
+   2026-02-27T09:46:19.994+00:00: vm.max_map_count is too low
+   2026-02-27T09:46:19.994+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+[1m[33m------[0m
+
+[1G[0Jtest> [7G[1G[0Jtest> exit[11G[1G[0Jtest> db.todos.find({})[24G[1G[0Jtest> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a166df0c0dcb6be474e39a'[39m) })[72G[1G[0Jtest> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a166df0c0dcb6be474e39a'[39m) )[71G[1G[0Jtest> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a16582b88e9c713174e39a'[39m) })[72G[1G[0Jtest> db.todos.deleteOne({ ([32m'69a16582b88e9c713174e39a'[39m) })[59G[1G[0Jtest> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'697cc6be9e5ed7ea6374e39a'[39m) })[72G[1G[0Jtest> db.todos.find({})[24G[1G[0Jtest> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[91G[1G[0Jtest> db.todos.find({})[24G[1G[0Jtest> show collections[23G[1G[0Jtest> use the_database[23G[1G[0Jtest> show dbs[15G
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         72.00 KiB
+[1mlocal[0m          80.00 KiB
+[1mthe_database[0m   72.00 KiB
+[1G[0Jtest> [7G[1G[0Jtest> show dbs[15G[1G[0Jtest> exit[11G[1G[0Jtest> db.todos.find({})[24G[1G[0Jtest> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a166df0c0dcb6be474e39a'[39m) })[72G[1G[0Jtest> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a166df0c0dcb6be474e39a'[39m) )[71G[1G[0Jtest> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a16582b88e9c713174e39a'[39m) })[72G[1G[0Jtest> db.todos.deleteOne({ ([32m'69a16582b88e9c713174e39a'[39m) })[59G[1G[0Jtest> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'697cc6be9e5ed7ea6374e39a'[39m) })[72G[1G[0Jtest> db.todos.find({})[24G[1G[0Jtest> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[91G[1G[0Jtest> db.todos.find({})[24G[1G[0Jtest> show collections[23G[1G[0Jtest> use the_database[23G
+switched to db the_database
+[1G[0Jthe_database> [15G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> exit[19G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a166df0c0dcb6be474e39a'[39m) })[80G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a166df0c0dcb6be474e39a'[39m) )[79G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a16582b88e9c713174e39a'[39m) })[80G[1G[0Jthe_database> db.todos.deleteOne({ ([32m'69a16582b88e9c713174e39a'[39m) })[67G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'697cc6be9e5ed7ea6374e39a'[39m) })[80G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[99G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> show collections[31G
+[1mtodos[0m
+[1G[0Jthe_database> [15G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> exit[19G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'697ca40b76476c443474e39a'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'697ca40b76476c443474e39b'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  { _id: ObjectId([32m'697ca9e2cd4243c98107b65f'[39m), done: [33mtrue[39m, __v: [33m0[39m },
+  {
+    _id: ObjectId([32m'697cba84886a901e6a1c87ba'[39m),
+    text: [32m'Buy groceries and cook dinner'[39m,
+    done: [33mtrue[39m,
+    __v: [33m0[39m
+  }
+]
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> show dbs[23G[1G[0Jthe_database> exit[19G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a166df0c0dcb6be474e39a'[39m) })[80G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a166df0c0dcb6be474e39a'[39m) )[79G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'69a16582b88e9c713174e39a'[39m) })[80G[1G[0Jthe_database> db.todos.deleteOne({ ([32m'69a16582b88e9c713174e39a'[39m) })[67G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'697cc6be9e5ed7ea6374e39a'[39m) })[80G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[99G[1D[1G[0Jthe_database> db.todos.insert[44m([49m{[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[98G[1D[1G[0Jthe_database> db.todos.insert([44m{[49m[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[97G[1D[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[96G[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [44m[32m"[49mIncrease the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[83G[1D[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[82G[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my tool belt[44m"[39m[49m, [33mdone[39m: [33mfalse[39m})[38G[1D[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[37G[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m[44m}[49m)[31G[1D[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[30G[1G[0Jthe_database> db.todos.insertO({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[31G[1G[0Jthe_database> db.todos.insertOn({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[32G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[33G[69C[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[102G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'69a168375b1ca2b80a74e39a'[39m)
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[102G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'697ca40b76476c443474e39a'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'697ca40b76476c443474e39b'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  { _id: ObjectId([32m'697ca9e2cd4243c98107b65f'[39m), done: [33mtrue[39m, __v: [33m0[39m },
+  {
+    _id: ObjectId([32m'697cba84886a901e6a1c87ba'[39m),
+    text: [32m'Buy groceries and cook dinner'[39m,
+    done: [33mtrue[39m,
+    __v: [33m0[39m
+  },
+  {
+    _id: ObjectId([32m'69a168375b1ca2b80a74e39a'[39m),
+    text: [32m'Increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004l[?2004hroot@fcd6c63ee8d1:/# exit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                                                                                           ]2;anni@Annis-MacBook-Pro:~/dev/Full Stack Open kurssi/containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://Annis-MacBook-Pro.local/Users/anni/dev/Full%20Stack%20Open%20kurssi/containers-applications/todo-app/todo-backend\[0m[27m[24m[J[39m[0m[49m
+[44m[37m [01;37mpe 27 helmikuuta - 11:48[22;37m [46m[34m[37m [01;37m~/dev/Full Stack Open kurssi/containers-applications/todo-app/todo-backend[22;37m [43m[36m[35m [01;35m exercises-12_5-12 1☀[22;35m [49m[33m[39m
+[43m[35m [01;35m@anni[22;35m [49m[33m[39m [K[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mx[27mit[39m[1m[31me[1m[31mx[0m[39m[90mi[27m[0m[32me[0m[32mx[39m[7m[90mi[27m[32me[32mx[27m[32mi[39m[90mt[27m[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[7m[90mt[27m[39m[1m[31mi[27m[1m[31mt[0m[39m[0m[32me[0m[32mx[0m[32mi[0m[32mt[39m[?1l>[?2004l
+]2;exit]1;exit
+Script done on Fri Feb 27 11:49:51 2026
